@@ -3,7 +3,7 @@ import { useLaunchListQuery } from '../../generated/graphql'
 import LaunchList, {OwnProps} from './LaunchList'
 
 
-const LaunchListContainer = () => {
+const LaunchListContainer = (props) => {
     const { data, error, loading } = useLaunchListQuery();
 
     if(loading){
