@@ -38,7 +38,6 @@ const ListItem = styled.li`
   cursor: pointer;
 `;
 
-
 const LaunchList: React.FC<Props> = ({ data, handleIdChange }) => (
   <LaunchListDiv>
     <Heading>Launches</Heading>
@@ -50,7 +49,7 @@ const LaunchList: React.FC<Props> = ({ data, handleIdChange }) => (
               <ListItem key={index} onClick={() => handleIdChange(launch.flight_number!)}>
                 {launch.mission_name} ({launch.launch_year})
               </ListItem>
-            )
+            ),
         )}
     </List>
   </LaunchListDiv>
